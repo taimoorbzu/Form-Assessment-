@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget-Form</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="align-content-center">
+    <div class="container-fluid">
+      <div class="container my-3">
+        <div class="row">
+          <div class="col text-center">
+            <h1>Expense List</h1>
+            <hr class="m-auto w-25" />
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col offset-md-2">
+            <h4>Create Expense</h4>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <form action="#" method="post">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  ><h6>Expense label</h6></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exp-label"
+                  placeholder="Enter Expense Label"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"
+                  ><h6>Expense Amount</h6></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exp-amount"
+                  placeholder="Enter Expense Amount"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-md-7 text-center">
+            <button id="exp-btn" class="btn btn-dark">Add Expense</button>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col offset-md-2">
+            <h4>Expense List</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col offset-md-2">
+            <ul id="exp-ul"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
